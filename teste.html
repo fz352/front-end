@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="blocoA">
+        <button data-apto="101">101</button>
+        <button data-apto="102">102</button>
+        <button data-apto="201">201</button>
+      </div>
+      
+      <dialog id="dialog">
+        <p id="dialog-text"></p>
+        <button id="cancel">Fechar</button>
+      </dialog>
+
+      <script>
+        const dialog = document.getElementById("dialog");
+const dialogText = document.getElementById("dialog-text");
+const cancel = document.getElementById("cancel");
+
+// Exemplo de dados
+const clientes = {
+  "101": { nome: "Alan", idade: 24 },
+  "102": { nome: "Maria", idade: 30 },
+  "201": { nome: "Carlos", idade: 45 }
+};
+
+// Para todos os botões dos blocos
+document.querySelectorAll(".blocoA button, .blocoB button").forEach(button => {
+  button.addEventListener("click", () => {
+    const apto = button.dataset.apto || button.textContent.trim();
+
+    // Preenche o conteúdo do dialog
+    if (clientes[apto]) {
+      dialogText.textContent = `Apartamento ${apto}\nNome: ${clientes[apto].nome}\nIdade: ${clientes[apto].idade}`;
+    } else {
+      dialogText.textContent = `Apartamento ${apto}\nNenhum cliente cadastrado.`;
+    }
+
+    dialog.showModal();
+  });
+});
+
+// Botão de fechar
+cancel.addEventListener("click", () => {
+  dialog.close();
+});
+
+      </script>
+      
+</body>
+
+</html>

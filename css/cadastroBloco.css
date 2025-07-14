@@ -1,0 +1,77 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+
+}
+
+/* Header */
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ed1b30;
+  color: white;
+  padding: 10px 20px;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Menu mobile */
+.mobile-menu {
+  display: none;
+  background-color: #ed1b30;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu ul li {
+  border-bottom: 1px solid #ed1b30;
+}
+
+.mobile-menu ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-menu ul li a:hover {
+  background-color: #ed1b30;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px;
+}
+
+.cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nomeBloco,
+.numeroDeApartamentos {
+  margin: 10px;
+  width: 200px;
+  height: 30px;
+  outline: none;
+}
+
+.btnCadastro {
+  width: 210px;
+  height: 30px;
+  cursor: pointer;
+}
