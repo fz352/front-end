@@ -6,14 +6,44 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
 });
 
 
-document.getElementById("btnCadastro").addEventListener("click", function () {
-    const nomeBloco = document.getElementById("nomeBloco").value
-    const numeroDeApartamentos = document.getElementById("numeroDeApartamentos").value
+const nomeBloco = document.getElementById("nomeBloco");
+const numeroDeApartamentos = document.getElementById("numeroDeApartamentos");
 
-    if (nomeBloco == "" || numeroDeApartamentos == "") {
-        console.log("Campo Vazio")
+document.getElementById("btnCadastro").addEventListener("click", function () {
+   const select = document.querySelector("#condominio");
+   var option = select.children[select.selectedIndex];
+   var value = option.value;
+
+    const condominio = parseInt(value);
+    const bloco = nomeBloco.value.trim();
+    const apartamentos = parseInt(numeroDeApartamentos.value.trim());
+   
+
+    if (condominio === "" || bloco === "" || apartamentos === "") {
+        alert("Por favor, preencha todos os campos.");
+        return;
     } else {
-        console.log(nomeBloco)
-        console.log(numeroDeApartamentos)
+        fetch("http://localhost:3333/createbloco", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                condominioId: condominio,
+                nome: bloco,
+                numeroApartamentos: apartamentos
+            })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Erro ao cadastrar bloco.");
+            }
+            return response.json();
+        })
+        .then(data => alert("Bloco cadastrado com sucesso!"))
+        .catch(error => console.error("Erro ao criar bloco " + error));
+
     }
+
+  
 })

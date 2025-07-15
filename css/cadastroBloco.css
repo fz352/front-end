@@ -62,6 +62,7 @@ body {
   flex-direction: column;
 }
 
+.nomeCondomio,
 .nomeBloco,
 .numeroDeApartamentos {
   margin: 10px;
