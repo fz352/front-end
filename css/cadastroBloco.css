@@ -19,10 +19,17 @@ body {
   cursor: pointer;
 }
 
-/* Menu mobile */
 .mobile-menu {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
   background-color: #ed1b30;
+}
+
+.mobile-menu.ativo {
+  max-height: 500px;
+  opacity: 1;
 }
 
 .mobile-menu ul {
@@ -55,6 +62,8 @@ body {
   margin: 50px;
 }
 
+
+
 .cadastro {
   display: flex;
   justify-content: center;
@@ -69,6 +78,15 @@ body {
   width: 200px;
   height: 30px;
   outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.condominio{
+  width: 210px;
+  height: 30px;
 }
 
 .btnCadastro {

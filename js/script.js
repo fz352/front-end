@@ -23,9 +23,7 @@ document.querySelectorAll(".blocoA button, .blocoB button").forEach(button =>{
 
     if(clientes[apto]){
       dialogText.textContent = `Apartamento ${apto}\nNome: ${clientes[apto].nome}\nIdade: ${clientes[apto].idade}`;
-    }else{
-      dialog.textContent = 'n existe'
-    }
+   }
 
     dialog.showModal()
   })

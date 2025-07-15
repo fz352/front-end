@@ -19,11 +19,19 @@ body {
   cursor: pointer;
 }
 
-/* Menu mobile */
 .mobile-menu {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
   background-color: #ed1b30;
 }
+
+.mobile-menu.ativo {
+  max-height: 500px;
+  opacity: 1;
+}
+
 
 .mobile-menu ul {
   list-style: none;
@@ -55,7 +63,7 @@ body {
   margin: 50px;
 }
 
-.cadastro {
+.cadastro, .nomeBloco {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,6 +77,12 @@ body {
   width: 200px;
   height: 30px;
   outline: none;
+}
+
+.blocos{
+  margin: 10px;
+  width: 210px;
+  height: 30px;
 }
 
 .btnCadastro {
