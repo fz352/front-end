@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  background-color: #000000;
 
 }
 
@@ -9,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ed1b30;
+  background-color: #000000;
   color: white;
   padding: 10px 20px;
 }
@@ -24,7 +25,7 @@ body {
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.4s ease, opacity 0.4s ease;
-  background-color: #ed1b30;
+  background-color: #000000;
 }
 
 .mobile-menu.ativo {
@@ -40,7 +41,7 @@ body {
 }
 
 .mobile-menu ul li {
-  border-bottom: 1px solid #ed1b30;
+  border-bottom: 1px solid #000000;
 }
 
 .mobile-menu ul li a {
@@ -51,7 +52,7 @@ body {
 }
 
 .mobile-menu ul li a:hover {
-  background-color: #ed1b30;
+  background-color: #000000;
 }
 
 .container {
@@ -63,30 +64,42 @@ body {
   margin: 50px;
 }
 
-.cadastro, .nomeBloco {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.img-header{
+width: 100px;
 }
 
-.nomeDono,
-.numeroDono,
-.numeroApartamento {
-  margin: 10px;
-  width: 200px;
-  height: 30px;
-  outline: none;
+.imgFront{
+background-image: url('../src/images/burguer5.png');
+background-size: cover;
+width:100vw;
+height: 500px;
+position: relative;
+bottom: 50px;
 }
 
-.blocos{
-  margin: 10px;
+.boasVindastxt{
+  color: white;
+}
+
+.title{
+ position: relative;
+ bottom: 4  0px;
+}
+
+.txt1{
+  font-weight: 100;
+}
+
+.btnParceiro{
   width: 210px;
-  height: 30px;
-}
-
-.btnCadastro {
-  width: 210px;
-  height: 30px;
+  height: 35px;
   cursor: pointer;
+  background-color: #ed1b30;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 7px;
+  box-shadow: 0px 8px 5px -5px rgba(255, 255, 255, 0.093);
 }

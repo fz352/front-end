@@ -1,9 +1,9 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-
+  background-image: url('../src/images/background3.png');
+  background-size: cover;
 }
-
 /* Header */
 .mobile-header {
   display: flex;
@@ -69,28 +69,57 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 70px;
+  
 }
 
 .nomeCondomio,
 .nomeBloco,
 .numeroDeApartamentos {
-  margin: 10px;
-  width: 200px;
-  height: 30px;
+  margin: 12px;
+  width: 230px;
+  height: 40px;
   outline: none;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(243, 238, 231, 0.726);
+  padding-left: 10px;
+  box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.39);
 }
 
 .condominio{
   width: 210px;
   height: 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(243, 238, 231, 0.726);
+  padding-left: 10px;
+  box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.39);
 }
 
 .btnCadastro {
   width: 210px;
-  height: 30px;
+  height: 35px;
   cursor: pointer;
+  background-color: #ed1b30;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 7px;
+  box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.39);
+}
+
+a{
+  text-decoration: none;
+
+  & .criarContatxt{
+    color: black;
+  }
 }
