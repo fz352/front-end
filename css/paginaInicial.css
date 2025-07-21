@@ -97,9 +97,20 @@ bottom: 50px;
   background-color: #ed1b30;
   border: none;
   border-radius: 15px;
-  color: white;
-  font-size: 15px;
-  font-weight: 500;
   margin: 7px;
   box-shadow: 0px 8px 5px -5px rgba(255, 255, 255, 0.093);
+}
+
+.btnLink{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.jaSouParceiro{
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 13px;
 }
