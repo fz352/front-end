@@ -1,0 +1,120 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #000000;
+
+}
+
+/* Header */
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  background-color: #000000;
+}
+
+.mobile-menu.ativo {
+  max-height: 500px;
+  opacity: 1;
+}
+
+
+.mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu ul li {
+  border-bottom: 1px solid #000000;
+}
+
+.mobile-menu ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-menu ul li a:hover {
+  background-color: #000000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px;
+}
+
+.img-header{
+width: 100px;
+}
+
+.imgFront{
+background-image: url('../src/images/burguer5.png');
+background-size: cover;
+width:100vw;
+height: 500px;
+position: relative;
+bottom: 50px;
+}
+
+.boasVindastxt{
+  color: white;
+}
+
+.title{
+ position: relative;
+ bottom: 4  0px;
+}
+
+.txt1{
+  font-weight: 100;
+}
+
+.btnParceiro{
+  width: 210px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #ed1b30;
+  border: none;
+  border-radius: 15px;
+  margin: 7px;
+  box-shadow: 0px 8px 5px -5px rgba(255, 255, 255, 0.093);
+}
+
+.btnLink{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.jaSouParceiro{
+
+  color: white;
+  font-weight: 100;
+  font-size: 13px;
+}

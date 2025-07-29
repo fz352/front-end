@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Mobile</title>
+    <link rel="stylesheet" href="./cadastroCredenciado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../../src/images/foodzap1.png">
+</head>
+
+<body>
+
+    <header class="mobile-header">
+        <div class="logo"><a href="./index.html"><img src="../../src/images/foodzap.png" alt="" class="img-header"></a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./pages/sobre.html">Sobre</a></li>
+            <li><a href="./pages/serviços.html">Serviços</a></li>
+            <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="cadastro">
+                <h2>Criar Conta</h2>
+                <div class="cadastroUsuario" id="cadastroUsuario">
+
+                <input type="text" class="nomeCredenciado" id="nomeUsuario" placeholder="Nome Completo">
+                <input type="number" class="senhaCredenciado" id="senhaUsuario" placeholder="Crie uma Senha">
+                <input type="text" class="emailCredenciado" id="emailUsuario" placeholder="Digite seu email">
+                <input type="number" class="cpfCredenciado" id="cpfUsuario" placeholder="Digite seu CPF/CNPJ">
+                <input type="text" class="cepCredenciado" id="cepCredenciado" placeholder="Digite o CEP">
+                <input type="number" class="endCredenciado" id="endCredenciado" placeholder="Endereço">
+                <input type="text" class="numeroCredenciado" id="numeroCredenciado" placeholder="Número">
+                <input type="number" class="complementoCredenciado" id="complementoCredenciado" placeholder="Complemento">
+                <input type="number" class="estadoCredenciado" id="estadoCredenciado" placeholder="Estado">
+                <input type="number" class="cidadeCredenciado" id="cidadeCredenciado" placeholder="Cidade">
+
+                <button class="btnCadastro" id="btnCadastro">Cadastrar</button>
+                <a href="./cadastroCredenciado.js"><p class="possuiContatxt">Já possui conta ?</p></a>
+
+            </div>
+        </div>
+    </div>
+    <script src="../../Foodzap-Credenciados/cadastro/cadastroCredenciado.js"></script>
+</body>
+
+</html>

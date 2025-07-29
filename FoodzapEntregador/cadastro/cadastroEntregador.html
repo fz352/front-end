@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Mobile</title>
+    <link rel="stylesheet" href="../cadastro/cadastroEntregador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../../src/images/foodzap.png">
+</head>
+
+<body>
+
+    <header class="mobile-header">
+        <div class="logo"><a href="./index.html"><img src="../../src/images/foodzap.png" alt="" class="img-header"></a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./pages/sobre.html">Sobre</a></li>
+            <li><a href="./pages/serviços.html">Serviços</a></li>
+            <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="cadastro">
+                <h2>Criar Conta</h2>
+                <div class="cadastroUsuario" id="cadastroUsuario">
+
+                <input type="text" class="nomeEntregador" id="nomeUsuario" placeholder="Nome Completo">
+                <input type="number" class="senhaEntregador" id="senhaUsuario" placeholder="Crie uma Senha">
+                <input type="text" class="emailEntregador" id="emailUsuario" placeholder="Digite seu email">
+                <input type="number" class="cpfEntregador" id="cpfUsuario" placeholder="Digite seu CPF">
+                <input type="number" class="cnhEntregador" id="cpfUsuario" placeholder="Número da CNH">
+                <select name="veiculo" id="veiculo-select" class="veiculo-select">
+                    <option value="">Tipo de Veiculo</option>
+                    <option value="Carro">Carro</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Bicicleta">Bicicleta</option>
+                  </select>
+
+                <button class="btnCadastro" id="btnCadastro">Cadastrar</button>
+                <a href="../cadastro/cadastroEntregador.js"><p class="possuiContatxt">Já possui conta ?</p></a>
+
+            </div>
+        </div>
+    </div>
+    <script src="./cadastroEntregador.js"></script>
+</body>
+
+</html>

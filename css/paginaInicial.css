@@ -1,16 +1,14 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  background-color: #000000;
-
+  background-size: cover;
 }
-
 /* Header */
 .mobile-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
+  background-color: #ed1b30;
   color: white;
   padding: 10px 20px;
 }
@@ -25,14 +23,13 @@ body {
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.4s ease, opacity 0.4s ease;
-  background-color: #000000;
+  background-color: #ed1b30;
 }
 
 .mobile-menu.ativo {
   max-height: 500px;
   opacity: 1;
 }
-
 
 .mobile-menu ul {
   list-style: none;
@@ -41,7 +38,7 @@ body {
 }
 
 .mobile-menu ul li {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #ed1b30;
 }
 
 .mobile-menu ul li a {
@@ -52,7 +49,7 @@ body {
 }
 
 .mobile-menu ul li a:hover {
-  background-color: #000000;
+  background-color: #ed1b30;
 }
 
 .container {
@@ -61,56 +58,144 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 50px;
+  
 }
 
-.img-header{
-width: 100px;
+.services-pedidos{
+display: flex;
+justify-content: center;
+flex-direction: column;
 }
 
-.imgFront{
-background-image: url('../src/images/burguer5.png');
-background-size: cover;
-width:100vw;
-height: 500px;
-position: relative;
-bottom: 50px;
+.pedidos{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.boasVindastxt{
+.emPreparo, .emRota, .retirada, .novoPedido{
+  display: flex;
+  flex-direction: column; /* Ícone em cima, texto embaixo */
+  align-items: center;    /* Centraliza no meio */
+  justify-content: center;
+  background: #c9c9c9;
   color: white;
-}
-
-.title{
- position: relative;
- bottom: 4  0px;
-}
-
-.txt1{
-  font-weight: 100;
-}
-
-.btnParceiro{
-  width: 210px;
-  height: 35px;
-  cursor: pointer;
-  background-color: #ed1b30;
   border: none;
-  border-radius: 15px;
-  margin: 7px;
-  box-shadow: 0px 8px 5px -5px rgba(255, 255, 255, 0.093);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px; /* Tamanho do texto */
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
 }
 
-.btnLink{
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
+.novoPedido::first-letter {
+  font-size: 40px;
 }
 
-.jaSouParceiro{
-  color: white;
-  text-decoration: none;
-  font-weight: 100;
-  font-size: 13px;
+.novoPedido span {
+  font-size: 14px; /* Ajusta o tamanho do texto */
+  margin-top: 5px; /* Espaço entre ícone e texto */
 }
+
+.emPreparo span {
+  font-size: 14px; /* Ajusta o tamanho do texto */
+  margin-top: 5px; /* Espaço entre ícone e texto */
+}
+
+.retirada span {
+  font-size: 14px; /* Ajusta o tamanho do texto */
+  margin-top: 5px; /* Espaço entre ícone e texto */
+}
+
+.novoPedido, .emPreparo, .retirada {
+  font-size: 40px; /* Ícone grande */
+}
+
+.title-pedidos{
+ margin-right: 250px;
+ font-weight: 200
+}
+
+
+  /*------------*/
+
+  .services-entregas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+    
+    .entregas{
+      margin: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    
+    .aguardandoMotoboy, .emRota, .historicoDeEntregas, .Motoboys{
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      border: none;
+    }
+    
+    .title-entregas{
+     margin-right: 250px;
+     font-weight: 200
+    }
+
+    /*----------*/
+
+    .services-produtos{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      }
+      
+      .produtos{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      
+      .tdsProdutos, .promocoes, .addProduto{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        border: none;
+      }
+      
+      .title-produtos{
+       margin-right: 250px;
+       font-weight: 200
+      }
+
+          /*----------*/
+
+    .services-financeiro{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      }
+      
+      .financeiro{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      
+      .vendasDoDia, .relatorios{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        border: none;
+      }
+      
+      .title-financeiro{
+       margin-right: 250px;
+       font-weight: 200
+      }
