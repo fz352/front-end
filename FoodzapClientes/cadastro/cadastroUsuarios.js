@@ -93,7 +93,7 @@ document.getElementById("btnCadastro").addEventListener("click", function (event
   }
 })
 .then(data => {
-
+  window.location.href = "../login/loginUsuarios.html"
 })
 .catch(error => {
   console.error("Erro:", error);

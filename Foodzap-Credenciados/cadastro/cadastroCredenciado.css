@@ -81,7 +81,8 @@ body {
 .numeroCredenciado,
 .complementoCredenciado,
 .estadoCredenciado,
-.cidadeCredenciado {
+.cidadeCredenciado,
+.telefoneCredenciado {
   margin: 12px;
   width: 230px;
   height: 40px;
