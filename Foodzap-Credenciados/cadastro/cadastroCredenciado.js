@@ -76,3 +76,8 @@ document.getElementById('cpfUsuario').addEventListener('input', function (e) {
 document.getElementById("btnCadastro").addEventListener("click", function (event) {
 
 });
+
+
+
+
+
