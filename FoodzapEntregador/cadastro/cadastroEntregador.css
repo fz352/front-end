@@ -77,7 +77,8 @@ body {
 .emailEntregador,
 .cpfEntregador,
 .veiculoEntregador,
-.cnhEntregador{
+.cnhEntregador,
+.telefoneEntregador {
   margin: 12px;
   width: 230px;
   height: 40px;

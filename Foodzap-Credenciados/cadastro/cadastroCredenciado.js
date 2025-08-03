@@ -172,6 +172,7 @@ document.getElementById("btnCadastro").addEventListener("click", function (event
   }
 })
 .then(data => {
+  window.location.href = "../login/loginCredenciado.html"
 
 })
 .catch(error => {
