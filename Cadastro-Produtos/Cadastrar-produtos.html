@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Cadastrar-produtos.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+
+    <header class="mobile-header">
+        <div class="logo"><a href="./index.html"><img src="../src/images/foodzap.png" alt="" class="img-header"></a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </header>
+    
+    <nav class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./pages/sobre.html">Sobre</a></li>
+            <li><a href="./pages/serviços.html">Serviços</a></li>
+            <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="cadastro-de-produtos">
+            <button class="fechar-secao"><a href="./Produtos.html">&#8592;</a></button>
+
+            <h1>Cadastrar Produto</h1>
+
+            <label for="productImage" class="label-productImage"><img src="../src/images/addImage4.png" alt=""></label>
+            <input type="file" id="productImage" name="productImage" class="productImage" accept="image/*" style="display: none;">
+
+            <label for="nome"><b>Nome</b></label>
+            <input type="text" class="nome-produto" id="nome-produto" placeholder="Ex: Dogão">
+
+            <label for="preco"><b>Preço</b></label>
+            <input type="text" class="nome-preco" id="preco-produto">
+
+            <label for="disponivel"><b>Disponível</b></label>
+            <select name="disponivel" id="select-disponivel" class="select-disponivel">
+                <option value="">Disponível</option>
+                <option value="comida">Sim</option>
+                <option value="bebidas">Não</option>
+            </select>
+
+
+            <label for="categoria"><b>Categoria</b></label>
+            <select name="categoria" id="select-categoria" class="select-categoria">
+                <option value="">Tipo de Alimento</option>
+                <option value="comida">Comidas</option>
+                <option value="bebidas">Bebidas</option>
+                <option value="lanches">Lanches</option>
+            </select>
+
+            <label for="description"><b>Descrição</b></label>
+            <textarea id="description" class="description" name="description" rows="4" placeholder="Descreva o produto aqui..."></textarea>
+            
+
+            <button class="btn-cadastro" id="btn-cadastro">Cadastrar Produto</button>
+        </div> 
+    </div>
+
+    <script src="Cadastrar-Produtos.js"></script>
+    <script src="../js/global.js"></script>
+</body>
+
+</html>
