@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #dfdfdf;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.ads-header {
+    width: 20rem;
+    height: 100px;
+    background-color: #b1464a;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 3px 6px 7px -3px rgba(0,0,0,0.53);
+
+}
+
+.ads{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.pesquisar-produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+
+    .pesquisar {
+        width: 19rem;
+        height: 45px;
+        text-align: center;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .btn-produtos {
+        margin-top: 20px;
+
+        .prod1 {
+            width: 90px;
+            height: 29px;
+            border-radius: 10px;
+            border: none;
+            margin: 7px;
+        }
+    }
+}
+
+.maisVendidos-title{
+    margin: 10px;
+}
+
+
+/* Define tamanho do swiper */
+.swiper {
+    width: 350px;
+    height: 300px; /* deixa o tamanho se ajustar ao conteúdo */
+    padding: 20px 0;
+    position: relative;
+    top: 20px;
+}
+
+/* Cada slide (card) */
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+.swiper-slide .card-link {
+    width: 100%;
+    height: auto;
+    background: white;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 6px 7px -3px rgba(0,0,0,0.53);
+    
+}
+
+.swiper-slide .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.swiper-slide .card-link .badge {
+    color: #b1464a;
+    margin: 16px 0 18px;
+    background-color: rgba(169, 169, 169, 0.103);
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.swiper-slide .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    margin: 30px 0 5px;
+    border: none;
+    background: #ed1b30;
+    color: white;
+    cursor: pointer;
+}
+
+.card-title{
+    font-size: 15px;
+    color: #000000;
+}
+
+.produto-entrada {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin:0 auto;
+    margin-top: 70px;
+    width: 20rem;
+
+    .entrada {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        border-bottom: 1px rgba(0, 0, 0, 0.137) solid;
+
+    }
+
+    .entrada-info{
+        margin: 10px;
+    }
+
+    .btnPlus {
+        width: 30px;
+        height: 30px;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        background-color: #b1464a;
+        color: white;
+    }
+
+    
+}
