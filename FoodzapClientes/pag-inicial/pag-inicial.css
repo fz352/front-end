@@ -28,14 +28,40 @@ body {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    box-shadow: 3px 6px 7px -3px rgba(0,0,0,0.53);
+    box-shadow: 3px 6px 7px -3px rgba(0, 0, 0, 0.53);
 
 }
 
-.ads{
+.ads {
     color: white;
     font-size: 20px;
     font-weight: 500;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-container .pesquisar {
+    padding-left: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 19rem;
+    height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+.input-container .icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: 60%;
 }
 
 .pesquisar-produto {
@@ -44,14 +70,6 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 10px;
-
-    .pesquisar {
-        width: 19rem;
-        height: 45px;
-        text-align: center;
-        border-radius: 10px;
-        border: none;
-    }
 
     .btn-produtos {
         margin-top: 20px;
@@ -66,7 +84,7 @@ body {
     }
 }
 
-.maisVendidos-title{
+.maisVendidos-title {
     margin: 10px;
 }
 
@@ -74,17 +92,19 @@ body {
 /* Define tamanho do swiper */
 .swiper {
     width: 350px;
-    height: 300px; /* deixa o tamanho se ajustar ao conteúdo */
+    height: 300px;
+    /* deixa o tamanho se ajustar ao conteúdo */
     padding: 20px 0;
     position: relative;
     top: 20px;
 }
 
 /* Cada slide (card) */
-.swiper-slide{
+.swiper-slide {
     display: flex;
     justify-content: center;
 }
+
 .swiper-slide .card-link {
     width: 100%;
     height: auto;
@@ -95,8 +115,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 3px 6px 7px -3px rgba(0,0,0,0.53);
-    
+    box-shadow: 3px 6px 7px -3px rgba(0, 0, 0, 0.53);
+
 }
 
 .swiper-slide .card-link .card-image {
@@ -128,7 +148,7 @@ body {
     cursor: pointer;
 }
 
-.card-title{
+.card-title {
     font-size: 15px;
     color: #000000;
 }
@@ -139,7 +159,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 70px;
     width: 20rem;
 
@@ -152,7 +172,7 @@ body {
 
     }
 
-    .entrada-info{
+    .entrada-info {
         margin: 10px;
     }
 
@@ -170,5 +190,126 @@ body {
         color: white;
     }
 
-    
+
+}
+
+#modal-info {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+/* Fundo escuro */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.produto-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+
+    .btn-fechar {
+        position: relative;
+        left: 60px;
+    }
+}
+
+.edit-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 60px;
+
+    h1 {
+        text-align: center;
+    }
+
+    input,
+    select {
+        height: 40px;
+        width: 15rem;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.438);
+        font-size: 15px;
+    }
+
+    .btn-fechar, .btn-salvar, .btn-excluir {
+        height: 33px;
+        width: 15rem;
+        border-radius: 8px;
+        border: none;
+        background: #ed1b30;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+
+
+
+    }
+
+    .fechar-secao {
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        border: none;
+        background: #ed1b30;
+        color: white;
+        font-size: 15px;
+        position: relative;
+        left: 17rem;
+        bottom: 2rem;
+
+        a {
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+        }
+    }
+
+    textarea {
+        border-radius: 8px;
+        text-align: center;
+        align-items: center;
+        height: 100px;
+        width: 15rem;
+    }
+
+    .label-productImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 70px;
+        height: 90px;
+        width: 15rem;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.438);
+        font-size: 15px;
+
+        img {
+            opacity: 0.5;
+        }
+    }
 }

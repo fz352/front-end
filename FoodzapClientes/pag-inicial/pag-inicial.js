@@ -14,3 +14,17 @@ const swiper = new Swiper('.card-wrapper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+const modal = document.getElementById("modal-info");
+const entrada = document.getElementById("entrada")
+const btnFechar = document.getElementById("btn-fechar");
+const btnSalvar = document.getElementById("btn-salvar");
+
+entrada.addEventListener('click', function(){
+  modal.showModal()
+})
+
+btnFechar.addEventListener('click', function(){
+  modal.close()
+})
