@@ -213,32 +213,21 @@
         <label for="productImage" class="label-productImage"><img src="../src/images/addImage4.png" alt=""></label>
           <input type="file" id="productImage" name="productImage" class="productImage" accept="image/*" style="display: none;">
 
-          <label for="nome"><b>Nome</b></label>
-          <input type="text" class="nome-produto" id="nome-produto" placeholder="Ex: Dogão">
+          <h2 class="nome-produto" id="nome-produto">Batata inglesa</h2>
 
-          <label for="preco"><b>Preço</b></label>
-          <input type="text" class="nome-preco" id="preco-produto">
+          <p>Batata inglesa ao molho milanesa</p>
 
-          <label for="preco"><b>Quantidade</b></label>
-          <input type="number" class="nome-quantidade" id="quantidade-produto">
-
-
-          <label for="categoria"><b>Categoria</b></label>
-          <select name="categoria" id="select-categoria" class="select-categoria">
-              <option value="">Tipo de Alimento</option>
-              <option value="comida">Comidas</option>
-              <option value="bebidas">Bebidas</option>
-              <option value="lanches">Lanches</option>
-          </select>
-
-          <label for="description"><b>Descrição</b></label>
-          <textarea id="description" class="description" name="description" rows="4" placeholder="Descreva o produto aqui..."></textarea>
-          
-
+          <h3  class="nome-preco" id="preco-produto">R$ 40,00</h3>
         
-        <button id="btn-fechar" class="btn-fechar">Fechar</button>
-        <button id="btn-salvar" class="btn-salvar">Salvar</button>
-        <button id="btn-salvar" class="btn-excluir">Excluir</button>
+        <div class="btn-box">
+          <div class="btn-fechar">
+            <button class="diminuirQuantidade">-</button>
+            <div class="btn-quantidade">1</div>
+            <button class="aumentarQuantidade">+</button>
+          </div>
+        <button id="btn-salvar" class="btn-salvar">Adicionar R$</button>
+        </div>
+        <button>ok</button>
       </div>
       
       

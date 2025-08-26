@@ -39,44 +39,42 @@ document.getElementById("btn-cadastro").addEventListener("click", function () {
         } else {
             console.log("Nenhuma imagem selecionada");
         }
-        var isOK = selectDisponivel.value === "1" ? true : false;
-        var createJson = {
-            "nome" : nomeProduto.value,
-            "preco": precoProduto.value,
-            "categoria": selectCategoria.value,
-            "descricao": description.value,
-            "disponivel":  isOK,
-            "imageUrl": "vazio"
-        }
-        callRequestHttp(JSON.stringify(createJson))
+        // var isOK = selectDisponivel.value === "1" ? true : false;
+        // var createJson = {
+        //     "nome" : nomeProduto.value,
+        //     "preco": precoProduto.value,
+        //     "categoria": selectCategoria.value,
+        //     "descricao": description.value,
+        //     "disponivel":  isOK,
+        //     "imageUrl": "vazio"
+        // }
+        // callRequestHttp(JSON.stringify(createJson))
     } else {
         console.log('preencha');
     }
 });
 
-function callRequestHttp(_jsonMontado) {
-  fetch("http://localhost:3333/createProduto", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: _jsonMontado
-  })
- .then(response => {
-  if (response.ok) {
-    alert("Produto cadastrado sucesso!");
-    return response.json();
-  } else {
-    alert("Erro ao cadastrar produto.");
-    throw new Error("Erro ao cadastrar produto.");
-  }
-})
-.then(data => {
-   window.location.href = 'produtos.html';
-})
-.catch(error => {
-  console.error("Erro:", error);
-
-});
- 
-}
+// function callRequestHttp(_jsonMontado) {
+//   fetch("http://localhost:3333/createProduto", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json"
+//     },
+//     body: _jsonMontado
+//   })
+//  .then(response => {
+//   if (response.ok) {
+//     alert("Produto cadastrado sucesso!");
+//     return response.json();
+//   } else {
+//     alert("Erro ao cadastrar produto.");
+//     throw new Error("Erro ao cadastrar produto.");
+//   }
+// })
+// .then(data => {
+//    window.location.href = 'produtos.html';
+// })
+// .catch(error => {
+//   console.error("Erro:", error);
+// });
+// }

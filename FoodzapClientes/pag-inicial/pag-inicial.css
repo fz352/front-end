@@ -53,6 +53,7 @@ body {
     text-align: center;
     border-radius: 10px;
     border: none;
+    outline: none;
 }
 
 .input-container .icon {
@@ -237,8 +238,8 @@ dialog::backdrop {
 
 .edit-products {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     gap: 10px;
     margin-top: 60px;
@@ -256,18 +257,58 @@ dialog::backdrop {
         font-size: 15px;
     }
 
-    .btn-fechar, .btn-salvar, .btn-excluir {
+   
+
+   .btn-salvar {
         height: 33px;
-        width: 15rem;
+        width: 8rem;
         border-radius: 8px;
         border: none;
         background: #ed1b30;
         color: white;
         font-size: 15px;
         cursor: pointer;
+        
+    }
 
+    .btn-fechar{
+        height: 33px;
+        width: 8rem;
+        border-radius: 8px;
+        border: none;
+        background: #ed1b30;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
 
+    .diminuirQuantidade{
+        background: #ed1b30;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        height: 33px;
 
+    }
+
+    .aumentarQuantidade{
+        background: #ed1b30;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+
+    .btn-box{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 
     .fechar-secao {
