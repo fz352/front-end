@@ -121,9 +121,9 @@
     <div class="entrada" id="entrada">
       <img src="../../src/images/addImage.png" alt="">
       <div class="entrada-info">
-        <h2>Batata Frita</h2>
-        <p>batata frita feita na hora</p>
-        <p>R$ 35,00</p>
+        <h2 id="nomelanche">Batata Frita</h2>
+        <p id="descricaolanche">batata frita feita na hora</p>
+        <p id="valoranche">R$ 35,00</p>
       </div>
       <button class="btnPlus">+</button>
     </div>
@@ -138,69 +138,46 @@
       <button class="btnPlus">+</button>
     </div>
 
-    <div class="entrada" id="entrada">
-      <img src="../../src/images/addImage.png" alt="">
-      <div class="entrada-info">
-        <h2>Batata Frita</h2>
-        <p>batata frita feita na hora</p>
-        <p>R$ 35,00</p>
+
+    <div class="produto-lanche1">
+
+      <h2 class="title-lanche1">Hamburguer</h2>
+
+      <div class="lanche1" id="entrada">
+        <img src="../../src/images/addImage.png" alt="">
+        <div class="lanche1-info">
+          <h2>Batata Frita</h2>
+          <p>batata frita feita na hora</p>
+          <p>R$ 35,00</p>
+        </div>
+        <button class="btnPlus">+</button>
       </div>
-      <button class="btnPlus">+</button>
-    </div>
 
-    <div class="entrada" id="entrada">
-      <img src="../../src/images/addImage.png" alt="">
-      <div class="entrada-info">
-        <h2>Batata Frita</h2>
-        <p>batata frita feita na hora</p>
-        <p>R$ 35,00</p>
+      <div class="lanche1" id="entrada">
+        <img src="../../src/images/addImage.png" alt="">
+        <div class="lanche1-info">
+          <h2>Batata Frita</h2>
+          <p>batata frita feita na hora</p>
+          <p>R$ 35,00</p>
+        </div>
+        <button class="btnPlus">+</button>
       </div>
-      <button class="btnPlus">+</button>
-    </div>
 
-    <h2 class="title-entrada">Entradas</h2>
-
-    <div class="entrada" id="entrada">
-      <img src="../../src/images/addImage.png" alt="">
-      <div class="entrada-info">
-        <h2>Batata Frita</h2>
-        <p>batata frita feita na hora</p>
-        <p>R$ 35,00</p>
+      <div class="lanche1" id="entrada">
+        <img src="../../src/images/addImage.png" alt="">
+        <div class="lanche1-info">
+          <h2>Batata Frita</h2>
+          <p>batata frita feita na hora</p>
+          <p>R$ 35,00</p>
+        </div>
+        <button class="btnPlus">+</button>
       </div>
-      <button class="btnPlus">+</button>
-    </div>
 
-    <div class="entrada" id="entrada">
-      <img src="../../src/images/addImage.png" alt="">
-      <div class="entrada-info">
-        <h2>Batata Frita</h2>
-        <p>batata frita feita na hora</p>
-        <p>R$ 35,00</p>
-      </div>
-      <button class="btnPlus">+</button>
-    </div>
 
-    <div class="entrada" id="entrada">
-      <img src="../../src/images/addImage.png" alt="">
-      <div class="entrada-info">
-        <h2>Batata Frita</h2>
-        <p>batata frita feita na hora</p>
-        <p>R$ 35,00</p>
-      </div>
-      <button class="btnPlus">+</button>
-    </div>
 
-    <div class="entrada" id="entrada">
-      <img src="../../src/images/addImage.png" alt="">
-      <div class="entrada-info">
-        <h2>Batata Frita</h2>
-        <p>batata frita feita na hora</p>
-        <p>R$ 35,00</p>
-      </div>
-      <button class="btnPlus">+</button>
-    </div>
 
-  </div>
+
+    </div>
 
   </div>
 
@@ -208,29 +185,65 @@
 
     <dialog class="modal-info" id="modal-info">
       <h2 class="produto-titulo" id="produto-titulo">Titulo</h2>
-      
+
       <div class="edit-products" id="edit-products">
-        <label for="productImage" class="label-productImage"><img src="../src/images/addImage4.png" alt=""></label>
-          <input type="file" id="productImage" name="productImage" class="productImage" accept="image/*" style="display: none;">
-
-          <h2 class="nome-produto" id="nome-produto">Batata inglesa</h2>
-
-          <p>Batata inglesa ao molho milanesa</p>
-
-          <h3  class="nome-preco" id="preco-produto">R$ 40,00</h3>
         
+
+        <h2 class="nome-produto" id="nome-produto">Batata inglesa</h2>
+
+        <p class="subTitle-acompanhamento">Batata inglesa ao molho milanesa</p>
+
+        <h3 class="nome-preco" id="preco-produto">R$ 40,00</h3>
+
+        <div class="acompanhamentos">
+          <div class="title-box">
+            <h3 class="title-acompanhamento">Acompanhamentos</h3>
+            <p class="subTitle-acompanhamento">Selecione até 10 opções</p>
+          </div>
+
+          <div class="acompanhamento">
+            <div class="acompanhamento-nome">
+              <p>Maionese Temperada</p>
+              <p><b>+ R$ 3,00</b></p>
+            </div>
+
+            <button class="btn-acompanhamento">+</button>
+
+          </div>
+
+          <div class="acompanhamento">
+            <div class="acompanhamento-nome">
+              <p>Maionese Temperada</p>
+              <p><b>+ R$ 3,00</b></p>
+            </div>
+
+            <button class="btn-acompanhamento">+</button>
+
+          </div>
+
+          <div class="acompanhamento">
+            <div class="acompanhamento-nome">
+              <p>Maionese Temperada</p>
+              <p><b>+ R$ 3,00</b></p>
+            </div>
+
+            <button class="btn-acompanhamento">+</button>
+
+          </div>
+        </div>
+
         <div class="btn-box">
           <div class="btn-fechar">
             <button class="diminuirQuantidade">-</button>
             <div class="btn-quantidade">1</div>
             <button class="aumentarQuantidade">+</button>
           </div>
-        <button id="btn-salvar" class="btn-salvar">Adicionar R$</button>
+          <button id="btn-salvar" class="btn-salvar">Adicionar R$ 35,00</button>
         </div>
-        <button>ok</button>
+        <button class="btn-close" id="btn-fechar">Fechar</button>
       </div>
-      
-      
+
+
     </dialog>
 
   </div>

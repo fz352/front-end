@@ -194,13 +194,53 @@ body {
 
 }
 
+.produto-lanche1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 20rem;
+
+    .lanche1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        border-bottom: 1px rgba(0, 0, 0, 0.137) solid;
+
+    }
+
+    .lanche1-info {
+        margin: 10px;
+    }
+
+    .btnPlus {
+        width: 30px;
+        height: 30px;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        background-color: #b1464a;
+        color: white;
+    }
+
+
+}
+
 #modal-info {
     position: fixed !important;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
 
-    width: 300px;
+    width: 330px;
     height: 400px;
     padding: 20px;
     border: none;
@@ -285,6 +325,22 @@ dialog::backdrop {
         align-items: center;
     }
 
+    .btn-close{
+        height: 33px;
+        width: 8rem;
+        border-radius: 8px;
+        border: none;
+        background: #ed1b30;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
     .diminuirQuantidade{
         background: #ed1b30;
         color: white;
@@ -308,7 +364,12 @@ dialog::backdrop {
     .btn-box{
         display: flex;
         justify-content: center;
-        gap: 10px;
+        align-items: center;
+        margin:0 auto ;
+        max-width: 100%;
+        gap: 20px;
+        position: relative;
+        top: 30px;
     }
 
     .fechar-secao {
@@ -354,3 +415,63 @@ dialog::backdrop {
         }
     }
 }
+
+.produtos-inventario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+
+  }
+
+  .nome-preco{
+    border-bottom: #00000023 solid 1px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+
+  .title-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px;
+    
+    
+
+    .title-acompanhamento, .subTitle-acompanhamento{
+        position: relative;
+        right: 10px;
+        
+    }
+  }
+
+  .subTitle-acompanhamento{
+    font-size: 13px;
+  }
+
+  .acompanhamento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #00000023 solid 1px;
+    width: 290px;
+    margin-top: 30px;
+    
+  }
+  .acompanhamento-nome{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .btn-acompanhamento{
+    background-color: white;
+    border: none;
+    font-size: 25px;
+  }

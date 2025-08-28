@@ -1,8 +1,8 @@
 const swiper = new Swiper('.card-wrapper', {
-  direction: 'horizontal', // horizontal (default)
-  loop: true,              // carrossel infinito
-  slidesPerView: 3,        // 👈 quantos cards aparecem ao mesmo tempo
-  spaceBetween: 20,        // espaço entre os cards (px)
+  direction: 'horizontal', 
+  loop: true,             
+  slidesPerView: 3,        
+  spaceBetween: 20,        
 
   pagination: {
     el: '.swiper-pagination',
@@ -17,14 +17,47 @@ const swiper = new Swiper('.card-wrapper', {
 
 
 const modal = document.getElementById("modal-info");
-const entrada = document.getElementById("entrada")
+const entradas = document.querySelectorAll(".entrada")
 const btnFechar = document.getElementById("btn-fechar");
 const btnSalvar = document.getElementById("btn-salvar");
+const lanches = document.querySelectorAll(".lanche1")
+const nomeLanche = document.getElementById("nomelanche")
+const descricaoLanche = document.getElementById("descricaolanche")
+const valorLanche = document.getElementById("valorlanche")
 
-entrada.addEventListener('click', function(){
-  modal.showModal()
+
+
+
+
+entradas.forEach(entrada => {
+
+  entrada.addEventListener('click', function () {
+    
+      let nome = sessionStorage.getItem(`nomeProduto0`);
+      
+    
+      console.log(`Produto:`, nome);
+
+    
+
+    modal.showModal()
+  })
+
 })
 
-btnFechar.addEventListener('click', function(){
+btnFechar.addEventListener('click', function () {
+  modal.close()
+})
+
+
+lanches.forEach(lanche1 => {
+
+  lanche1.addEventListener('click', function () {
+    modal.showModal()
+  })
+
+})
+
+btnFechar.addEventListener('click', function () {
   modal.close()
 })
